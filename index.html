@@ -1,0 +1,188 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InPower Customs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        .motto {
+            font-size: 1.5em;
+            color: #0078d7;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .gallery, .buy-cars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img, .buy-cars img {
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover, .buy-cars img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .contact-form button {
+            background-color: #0078d7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact-form button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #0078d7;
+        }
+        .buy-cars .item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buy-cars .item h3 {
+            font-size: 1.2em;
+            color: #0078d7;
+        }
+        .buy-cars .item p {
+            font-size: 1em;
+            color: #555;
+        }
+        .buy-cars .item button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .buy-cars .item button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        InPower Customs
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#buy">Buy Cars</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank">YouTube</a>
+    </nav>
+    <section id="home" class="container">
+        <h2 class="motto">Power up your ride.</h2>
+        <p>Welcome to InPower Customs, where we specialize in adding custom lights and features to your diecast cars.</p>
+    </section>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>InPower Customs is dedicated to enhancing your diecast car collection with custom lighting solutions. Our team of experts works meticulously to bring your vision to life.</p>
+    </section>
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="car1.jpg" alt="Custom Diecast Car 1">
+            <img src="car2.jpg" alt="Custom Diecast Car 2">
+            <img src="car3.jpg" alt="Custom Diecast Car 3">
+        </div>
+    </section>
+    <section id="buy" class="container">
+        <h2>Buy Cars</h2>
+        <div class="buy-cars">
+            <div class="item">
+                <img src="car4.jpg" alt="Diecast Car 1">
+                <h3> FHP Cruser </h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="item">
+                <img src="car5.jpg" alt="Diecast Car 2">
+                <h3>coming soon</h3>
+                <p>Coming soon</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="item">
+                <img src="car6.jpg" alt="coming soon">
+                <h3>coming soon</h3>
+                <p>$coming soon</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="https://formspree.io/f/mwpkqyno" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 InPower Customs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
